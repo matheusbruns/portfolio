@@ -40,12 +40,12 @@
     transition: color 0.3s ease ;
 }
 .navbar .menu li a:hover{
-    color: #1581dacc;
+    color: #218ee7;
 }
 /*  Home  inicio*/
 .home{
     display: flex;
-    background: url(/portifolio/image/background-image1.png);
+    background: url(image/background-image1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -71,6 +71,6 @@
     margin: 5px 0;
 }
 .home .home-content span{
-    color: #1581dacc;
+    color: #218ee7;
     font-weight: 500;
 }
