@@ -194,13 +194,20 @@
     .home .home-content .text-1, .text-2, .text-3{
         padding: 2px 0;
     }
+    .home .max-width{
+        width: 100%;
+        margin: auto 0;
+        padding: 40px;
+    }
     .home .home-content .text-1{
-        font-size: 15px;
+        font-size: 17px;
+        
     }
     .home .home-content .text-2{
         font-size: 25px;
+        font-weight: bold;
     }
     .home .home-content .text-3{
-        font-size: 17px;
+        font-size: 20px;
     }
 }
