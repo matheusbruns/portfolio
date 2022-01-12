@@ -13,3 +13,7 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass('active');
     })
 })
+
+function onClickMenu(){
+    document.querySelector('div.menu-btn').classList.toggle('change')
+}

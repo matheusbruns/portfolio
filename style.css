@@ -97,6 +97,30 @@
     cursor: pointer;
     display: none;
 }
+.menu-btn .i{
+    width: 50px;
+    border-top: 5px solid white;
+    padding: 5px 0;
+    transition: 0.5s ease;
+}
+
+.change .i{
+    padding: 0;
+}
+.change #i1{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+.change #i3{
+    transform: translateY(-6px) rotateZ(45deg);
+}
+.change #i2{
+    transform: translateX(-50px);
+    transition: 0.3s;
+    opacity: 0;
+}
+.change{
+    display: block;
+}
 
 .close{
     display: none;
@@ -184,6 +208,18 @@
     }
     .home .home-content .text-3{
         font-size: 30px;
+    }
+    .menu-btn .i{
+        width: 40px;
+        border-top: 3px solid white;
+        padding: 3px 0;
+        transition: 0.5s ease;
+    }
+    .change #i1{
+        transform: translateY(8px) rotateZ(-40deg);
+    }
+    .change #i3{
+        transform: translateY(-10px) rotateZ(40deg);
     }
 }
 @media (max-width:552px){
