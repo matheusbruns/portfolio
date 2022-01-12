@@ -22,9 +22,15 @@
     
 }
 .navbar.sticky{
-        background: #05345a;
-        padding: 20px 0;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 15px );
+    -webkit-backdrop-filter: blur( 15px );
+    border: 1px solid rgba(255, 255, 255, 0.096);
+    padding: 20px 0;
+    transition: 1s;
 }
+
 .navbar .max-width{
     display: flex;
     align-items: center;
