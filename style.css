@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*Quando clicar não aparece aquele realce de clique*/
+}
+:root{
+    --corPrincipal:#218ee7;
+    --fontePrincipal:'Poppins', sans-serif;
+    --fonteSecundaria:'Ubuntu', sans-serif;;
 }
 .max-width{
     max-width: 1300px;
@@ -17,12 +23,13 @@
     position:fixed;
     width: 100%;
     padding: 20px 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fontePrincipal);
     transition: all 0.3s ease;
+    z-index: 999;
     
 }
 .navbar.sticky{
-    background: rgba( 255, 255, 255, 0.35 );
+    background: rgba(20, 133, 224, 0.35);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 15px );
     -webkit-backdrop-filter: blur( 15px );
@@ -53,7 +60,7 @@
     transition: color 0.3s ease ;
 }
 .navbar .menu li a:hover{
-    color: #218ee7;
+    color: var(--corPrincipal);
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -68,9 +75,8 @@
     height: 100vh;
     color: #fff;
     min-height: 500px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fontePrincipal);
 }
-
 .home .max-width{
     margin: auto 0 auto 40px;
 }
@@ -87,9 +93,54 @@
     margin: 5px 0;
 }
 .home .home-content span{
-    color: #218ee7;
+    color: var(--corPrincipal);
     font-weight: 500;
 }
+
+/* sobre */
+.about{
+    font-family:var(--fontePrincipal);
+}
+.about .title{
+    position: relative;
+    font-family: var(--fonteSecundaria);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "Quem sou";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    padding: 5px;
+    color: var(--corPrincipal);
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .text{
+    text-align:center;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
 /*Menu Mobile*/
 .menu-btn{
     color: #fff;
@@ -99,19 +150,18 @@
 }
 .menu-btn .i{
     width: 50px;
-    border-top: 5px solid white;
-    padding: 5px 0;
+    border-top: 3px solid white;
+    padding: 3px 0;
     transition: 0.5s ease;
 }
-
 .change .i{
     padding: 0;
 }
 .change #i1{
-    transform: translateY(4px) rotateZ(-45deg);
+    transform: translateY(6px) rotateZ(-45deg);
 }
 .change #i3{
-    transform: translateY(-6px) rotateZ(45deg);
+    transform: translateY(1px) rotateZ(45deg);
 }
 .change #i2{
     transform: translateX(-50px);
@@ -121,7 +171,6 @@
 .change{
     display: block;
 }
-
 .close{
     display: none;
 }
@@ -212,14 +261,14 @@
     .menu-btn .i{
         width: 40px;
         border-top: 3px solid white;
-        padding: 3px 0;
+        padding: 2px 0;
         transition: 0.5s ease;
     }
     .change #i1{
-        transform: translateY(8px) rotateZ(-40deg);
+        transform: translateY(3px) rotateZ(-45deg);
     }
     .change #i3{
-        transform: translateY(-10px) rotateZ(40deg);
+        transform: translateY(-10px) rotateZ(45deg);
     }
 }
 @media (max-width:552px){
